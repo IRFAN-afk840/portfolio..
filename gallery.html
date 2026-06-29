@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Photo gallery of Muhamad Adib Irfan — university life, Kesatria activities, academic programmes, and community service." />
+  <meta name="keywords" content="gallery, photos, UiTM, Kesatria, university life, events" />
+  <meta name="author" content="Muhamad Adib Irfan Bin Khairuddin" />
+  <title>Gallery | Muhamad Adib Irfan — E-Resume</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* Lightbox */
+    .lightbox-overlay {
+      display: none; position: fixed; inset: 0;
+      background: rgba(0,0,0,0.88); z-index: 1000;
+      align-items: center; justify-content: center;
+    }
+    .lightbox-overlay.active { display: flex; }
+    .lightbox-img { max-width: 90vw; max-height: 85vh; border-radius: 6px; box-shadow: 0 8px 40px rgba(0,0,0,0.5); }
+    .lightbox-close {
+      position: absolute; top: 1.5rem; right: 1.5rem;
+      background: #fff; border: none; border-radius: 50%;
+      width: 40px; height: 40px; font-size: 1.2rem; cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .lightbox-caption {
+      position: absolute; bottom: 1.5rem; left: 50%; transform: translateX(-50%);
+      color: #fff; font-size: 0.9rem; background: rgba(0,0,0,0.5);
+      padding: 0.4rem 1rem; border-radius: 4px;
+    }
+    .gallery-item { cursor: pointer; }
+
+    /* Category filter */
+    .filter-bar { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
+    .filter-btn {
+      padding: 0.4rem 1rem; border-radius: 99px; border: 2px solid var(--mid-blue);
+      background: transparent; color: var(--mid-blue); font-size: 0.82rem;
+      font-weight: 700; cursor: pointer; transition: all 0.2s;
+    }
+    .filter-btn.active, .filter-btn:hover { background: var(--dark-blue); color: #fff; border-color: var(--dark-blue); }
+  </style>
+</head>
+<body>
+
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <a href="student.html" class="logo-wrap" aria-label="Student information page">
+        <div class="logo-icon" aria-hidden="true">MA</div>
+        <div class="logo-text">Muhamad Adib Irfan <span>E-Resume Portfolio</span></div>
+      </a>
+    </div>
+  </header>
+
+  <nav class="main-nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <ul class="nav-list" id="navList">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="activities.html">Activities</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navList" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="page-banner">
+    <h1>Gallery</h1>
+    <p>Moments from university life, Kesatria, and community service</p>
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox-overlay" id="lightbox" role="dialog" aria-modal="true" aria-label="Image lightbox">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close lightbox">&times;</button>
+    <img class="lightbox-img" id="lightboxImg" src="" alt="" />
+    <p class="lightbox-caption" id="lightboxCaption"></p>
+  </div>
+
+  <main class="site-main" id="main">
+
+    <!-- Filter Buttons -->
+    <section aria-labelledby="gallery-heading">
+      <span class="section-eyebrow">Photo Gallery</span>
+      <h2 class="section-heading" id="gallery-heading">My Moments</h2>
+      <div class="section-rule"></div>
+
+      <div class="filter-bar" role="group" aria-label="Filter gallery by category">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="kesatria">Kesatria</button>
+        <button class="filter-btn" data-filter="academic">Academic</button>
+        <button class="filter-btn" data-filter="community">Community</button>
+        <button class="filter-btn" data-filter="university">University Life</button>
+      </div>
+
+      <div class="gallery-grid" id="galleryGrid">
+
+        <!-- Kesatria -->
+        <figure class="gallery-item" data-cat="kesatria" data-caption="Kesatria UiTM — Parade Drill">
+          <a href="Kesatria01.jpeg" aria-label="Kesatria parade drill photo - click to enlarge">
+            <img src="Kesatria01.jpeg" alt="Kesatria UiTM parade drill formation" width="300" height="200" loading="lazy" />
+          </a>
+          <figcaption class="gallery-caption">Kesatria — Parade Drill</figcaption>
+        </figure>
+
+        <figure class="gallery-item" data-cat="kesatria" data-caption="Kesatria Training Session">
+          <a href="Kesatria02.jpeg" aria-label="Kesatria training session photo - click to enlarge">
+            <img src="Kesatria02.jpeg" alt="Kesatria UiTM training session outdoors" width="300" height="200" loading="lazy" />
+          </a>
+          <figcaption class="gallery-caption">Kesatria — Training Session</figcaption>
+        </figure>
+
+        <figure class="gallery-item" data-cat="kesatria" data-caption="Kesatria Leadership Event">
+          <a href="Kesatria03.jpeg" aria-label="Kesatria leadership event photo - click to enlarge">
+            <img src="Kesatria03.jpeg" alt="Kesatria UiTM leadership event with commander" width="300" height="200" loading="lazy" />
+          </a>
+          <figcaption class="gallery-caption">Kesatria — Latihan Intensif Bakal Komander</figcaption>
+        </figure>
+
+        <!-- Academic -->
+
+        <figure class="gallery-item" data-cat="academic" data-caption="Group Assignment Presentation">
+          <a href="presentation.jpeg" aria-label="Group assignment presentation photo - click to enlarge">
+            <img src="presentation.jpeg" alt="Group assignment presentation at UiTM classroom" width="300" height="200" loading="lazy" />
+          </a>
+          <figcaption class="gallery-caption">Group Presentation</figcaption>
+        </figure>
+
+        <figure class="gallery-item" data-cat="academic" data-caption="Faculty of Information Science">
+          <a href="fakulti.jfif" aria-label="Faculty of Information Science building photo - click to enlarge">
+            <img src="fakulti.jfif" alt="Faculty of Information Science building at UiTM Puncak Perdana" width="300" height="200" loading="lazy" />
+          </a>
+          <figcaption class="gallery-caption">Faculty of Information Science</figcaption>
+        </figure>
+
+        <!-- Community -->
+        <figure class="gallery-item" data-cat="community" data-caption="Crowd Control">
+          <a href="CrowdControl.jpeg" aria-label="Crowd control community service photo - click to enlarge">
+            <img src="CrowdControl.jpeg" alt="Gotong-royong community clean-up activity" width="300" height="200" loading="lazy" />
+          </a>
+          <figcaption class="gallery-caption">Crowd Control</figcaption>
+        </figure>
+
+        <figure class="gallery-item" data-cat="community" data-caption="Charity Drive Event">
+          <a href="cc.jpeg" aria-label="Charity drive event photo - click to enlarge">
+            <img src="cc.jpeg" alt="Crowd control with community members" width="300" height="200" loading="lazy" />
+          </a>
+          <figcaption class="gallery-caption">Crowd Control</figcaption>
+        </figure>
+
+        <!-- University Life -->
+        <figure class="gallery-item" data-cat="university" data-caption="UiTM Puncak Perdana Campus">
+          <a href="uitm puncak perdana.jfif" aria-label="UiTM Puncak Perdana campus photo - click to enlarge">
+            <img src="uitm puncak perdana.jfif" alt="UiTM Puncak Perdana main campus building" width="300" height="200" loading="lazy" />
+          </a>
+          <figcaption class="gallery-caption">UiTM Puncak Perdana Campus</figcaption>
+        </figure>
+
+        <figure class="gallery-item" data-cat="university" data-caption="Orientation Week">
+          <a href="MDS.jpeg" aria-label="Orientation week photo - click to enlarge">
+            <img src="MDS.jpeg" alt="Orientation week activities at UiTM Puncak Perdana" width="300" height="200" loading="lazy" />
+          </a>
+          <figcaption class="gallery-caption">Orientation Week</figcaption>
+        </figure>
+
+        <figure class="gallery-item" data-cat="university" data-caption="University Event">
+          <a href="event.jpeg" aria-label="University event photo - click to enlarge">
+            <img src="event.jpeg" alt="University event with students" width="300" height="200" loading="lazy" />
+          </a>
+          <figcaption class="gallery-caption">University Event</figcaption>
+        </figure>
+
+        <figure class="gallery-item" data-cat="university" data-caption="Campus Life — Study Group">
+          <a href="group member.jpeg" aria-label="Study group on campus photo - click to enlarge">
+            <img src="group member.jpeg" alt="Study group session with friends on UiTM campus" width="300" height="200" loading="lazy" />
+          </a>
+          <figcaption class="gallery-caption">Campus Life — Study Group</figcaption>
+        </figure>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-top">
+      <div class="footer-col">
+        <h3>Sitemap</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="activities.html">Activities</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Contact</h3>
+        <ul>
+          <li><a href="mailto:2025476714@student.uitm.edu.my">2025476714@student.uitm.edu.my</a></li>
+          <li><a href="tel:0149728891">014-972 8891</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Disclaimer</h3>
+        <p>IMS458 Web Design &amp; Management Individual Assignment. Academic use only. &copy; 2026 Muhamad Adib Irfan Bin Khairuddin.</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Muhamad Adib Irfan Bin Khairuddin | IMS458 Web Design &amp; Management</p>
+      <p style="margin-top:0.3rem;">Recommended: Google Chrome / Firefox &nbsp;|&nbsp; 1280&times;720 or higher</p>
+      <a href="#" class="back-top" aria-label="Back to top">&#8679; Back to Top</a>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script>
+    // Gallery filter
+    document.querySelectorAll('.filter-btn').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        document.querySelectorAll('.filter-btn').forEach(function (b) { b.classList.remove('active'); });
+        btn.classList.add('active');
+        var filter = btn.dataset.filter;
+        document.querySelectorAll('.gallery-item').forEach(function (item) {
+          item.style.display = (filter === 'all' || item.dataset.cat === filter) ? 'block' : 'none';
+        });
+      });
+    });
+
+    // Lightbox
+    var overlay = document.getElementById('lightbox');
+    var lbImg   = document.getElementById('lightboxImg');
+    var lbCap   = document.getElementById('lightboxCaption');
+
+    document.querySelectorAll('.gallery-item a').forEach(function (link) {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        lbImg.src = link.href;
+        lbImg.alt = link.querySelector('img').alt;
+        lbCap.textContent = link.closest('.gallery-item').dataset.caption || '';
+        overlay.classList.add('active');
+        document.getElementById('lightboxClose').focus();
+      });
+    });
+
+    document.getElementById('lightboxClose').addEventListener('click', function () {
+      overlay.classList.remove('active'); lbImg.src = '';
+    });
+    overlay.addEventListener('click', function (e) {
+      if (e.target === overlay) { overlay.classList.remove('active'); lbImg.src = ''; }
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') { overlay.classList.remove('active'); lbImg.src = ''; }
+    });
+  </script>
+</body>
+</html>

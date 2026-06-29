@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="About Muhamad Adib Irfan Bin Khairuddin — personal background, interests, and aspirations." />
+  <meta name="keywords" content="about, personal background, UiTM, information science, Adib Irfan" />
+  <meta name="author" content="Muhamad Adib Irfan Bin Khairuddin" />
+  <title>About Me | Muhamad Adib Irfan — E-Resume</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .about-layout { display: grid; grid-template-columns: 260px 1fr; gap: 3rem; align-items: start; }
+    .about-photo  { width: 100%; aspect-ratio: 3/4; object-fit: cover; border-radius: var(--radius); box-shadow: var(--shadow); border: 5px solid var(--accent-gold); }
+    .info-list li { display: flex; gap: 1rem; padding: 0.6rem 0; border-bottom: 1px solid var(--border); font-size:0.9rem; }
+    .info-list li strong { min-width: 130px; color: var(--dark-blue); font-weight: 700; flex-shrink: 0; }
+    @media(max-width:700px){ .about-layout { grid-template-columns: 1fr; } .about-photo { max-width: 240px; margin: 0 auto; } }
+  </style>
+</head>
+<body>
+
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <a href="student.html" class="logo-wrap" aria-label="Student information page">
+        <div class="logo-icon" aria-hidden="true">MA</div>
+        <div class="logo-text">Muhamad Adib Irfan <span>E-Resume Portfolio</span></div>
+      </a>
+    </div>
+  </header>
+
+  <nav class="main-nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <ul class="nav-list" id="navList">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About Me</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="activities.html">Activities</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navList" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="page-banner">
+    <h1>About Me</h1>
+    <p>Get to know the person behind this e-resume</p>
+  </div>
+
+  <main class="site-main" id="main">
+
+    <!-- Personal Background -->
+    <section aria-labelledby="about-heading">
+      <div class="about-layout">
+        <div>
+          <img src="Muhamad Adib irfan bin Khairuddin.jpeg" alt="Muhamad Adib Irfan Bin Khairuddin — formal profile photo" class="about-photo" width="260" height="347" />
+        </div>
+        <div>
+          <span class="section-eyebrow">Personal Background</span>
+          <h2 class="section-heading" id="about-heading">Hello, I'm Adib Irfan</h2>
+          <div class="section-rule"></div>
+          <p style="margin-bottom:1rem;">
+            My name is <strong>Muhamad Adib Irfan Bin Khairuddin</strong>. I am currently a student at the 
+            <strong>Faculty of Information Science, Universiti Teknologi MARA (UiTM) Puncak Perdana</strong>. 
+            I am passionate about technology, web design, leadership, and personal development.
+          </p>
+          <p style="margin-bottom:1.5rem;">
+            Throughout my academic journey, I have been actively involved in co-curricular activities, 
+            particularly as a <strong>Komander Kesatria UiTM</strong>, which has greatly shaped my discipline, 
+            communication skills, and leadership capabilities. I believe that academic excellence must go 
+            hand-in-hand with strong character and community involvement.
+          </p>
+
+          <ul class="info-list">
+            <li><strong>Full Name:</strong> Muhamad Adib Irfan Bin Khairuddin</li>
+            <li><strong>Nationality:</strong> Malaysian</li>
+            <li><strong>Languages:</strong> Bahasa Melayu (Native), English (Proficient)</li>
+            <li><strong>Personality:</strong> Disciplined, Proactive, Collaborative</li>
+            <li><strong>Interests:</strong> Web Design, Leadership, Community Service, Technology</li>
+            <li><strong>Email:</strong> <a href="mailto:2025476714@student.uitm.edu.my">2025476714@student.uitm.edu.my</a></li>
+            <li><strong>Phone:</strong> <a href="tel:0149728891">014-972 8891</a></li>
+          </ul>
+
+          <div style="margin-top:1.5rem;">
+            <a href="contact.html" class="btn btn-gold">Contact Me</a>
+            &nbsp;
+            <a href="education.html" class="btn btn-white" style="color:var(--dark-blue); border-color:var(--dark-blue);">My Education</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Personal Qualities -->
+    <section style="margin-top:3rem;" aria-labelledby="qualities-heading">
+      <span class="section-eyebrow">Personality Traits</span>
+      <h2 class="section-heading" id="qualities-heading">My Qualities</h2>
+      <div class="section-rule"></div>
+      <div class="grid-3">
+        <article class="card reveal">
+          <h3 class="card-title">🎯 Disciplined</h3>
+          <p>My involvement in Kesatria has instilled a high level of discipline and time management in everything I do, from academics to personal responsibilities.</p>
+        </article>
+        <article class="card reveal">
+          <h3 class="card-title">🤝 Collaborative</h3>
+          <p>I thrive in team environments and enjoy working with others to achieve shared goals. I believe great outcomes come from strong teamwork and open communication.</p>
+        </article>
+        <article class="card reveal">
+          <h3 class="card-title">💡 Proactive</h3>
+          <p>I do not wait to be asked. I take initiative in learning new skills, joining programmes, and seeking ways to improve myself and contribute to my community.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Professional Aspirations -->
+    <section style="margin-top:3rem;" aria-labelledby="aspire-heading">
+      <span class="section-eyebrow">Future Plans</span>
+      <h2 class="section-heading" id="aspire-heading">Professional Aspirations</h2>
+      <div class="section-rule"></div>
+      <div class="card reveal" style="border-left-color: var(--accent-gold);">
+        <p style="font-size:0.95rem; line-height:1.85;">
+          Upon completing my studies, I aspire to work in the field of <strong>Information Technology</strong> 
+          — specifically in web development, digital communications, or IT management. I intend to pursue 
+          further professional development through certifications and industry experience. My long-term goal 
+          is to contribute to the digital transformation of organisations in Malaysia, making technology 
+          more accessible and impactful for society.
+        </p>
+      </div>
+    </section>
+
+    <!-- References -->
+    <section style="margin-top:3rem;" aria-labelledby="ref-heading">
+      <span class="section-eyebrow">References</span>
+      <h2 class="section-heading" id="ref-heading">Persons to Be Referred To</h2>
+      <div class="section-rule"></div>
+      <div class="grid-2">
+        <div class="card reveal">
+          <h3 class="card-title">Dr. / Prof. [Lecturer Name]</h3>
+          <p class="card-role">Lecturer, Faculty of Information Science</p>
+          <p class="card-date">UiTM Puncak Perdana</p>
+          <p>Email: <a href="mailto:lecturer@uitm.edu.my">lecturer@uitm.edu.my</a><br />Tel: 03-XXXX XXXX</p>
+        </div>
+        <div class="card reveal">
+          <h3 class="card-title">[Pegawai Kesatria / Supervisor Name]</h3>
+          <p class="card-role">Pegawai Kesatria / Programme Supervisor</p>
+          <p class="card-date">UiTM Puncak Perdana</p>
+          <p>Email: <a href="mailto:pegawai@uitm.edu.my">pegawai@uitm.edu.my</a><br />Tel: 03-XXXX XXXX</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-top">
+      <div class="footer-col">
+        <h3>Sitemap</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="activities.html">Activities</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Contact</h3>
+        <ul>
+          <li><a href="mailto:2025476714@student.uitm.edu.my">2025476714@student.uitm.edu.my</a></li>
+          <li><a href="tel:0149728891">014-972 8891</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Disclaimer</h3>
+        <p>IMS458 Web Design &amp; Management Individual Assignment. Academic use only. &copy; 2026 Muhamad Adib Irfan Bin Khairuddin.</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Muhamad Adib Irfan Bin Khairuddin | IMS458 Web Design &amp; Management</p>
+      <p style="margin-top:0.3rem;">Recommended: Google Chrome / Firefox &nbsp;|&nbsp; 1280&times;720 or higher</p>
+      <a href="#" class="back-top" aria-label="Back to top">&#8679; Back to Top</a>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

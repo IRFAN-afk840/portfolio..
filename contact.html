@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Muhamad Adib Irfan Bin Khairuddin — email, phone, and contact form." />
+  <meta name="keywords" content="contact, email, phone, get in touch, Muhamad Adib Irfan" />
+  <meta name="author" content="Muhamad Adib Irfan Bin Khairuddin" />
+  <title>Contact | Muhamad Adib Irfan — E-Resume</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <a href="student.html" class="logo-wrap" aria-label="Student information page">
+        <div class="logo-icon" aria-hidden="true">MA</div>
+        <div class="logo-text">Muhamad Adib Irfan <span>E-Resume Portfolio</span></div>
+      </a>
+    </div>
+  </header>
+
+  <nav class="main-nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <ul class="nav-list" id="navList">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="activities.html">Activities</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navList" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="page-banner">
+    <h1>Contact</h1>
+    <p>Get in touch with me</p>
+  </div>
+
+  <main class="site-main" id="main">
+
+    <!-- Contact Boxes -->
+    <section aria-labelledby="contact-info-heading">
+      <span class="section-eyebrow">Contact Information</span>
+      <h2 class="section-heading" id="contact-info-heading">Reach Me At</h2>
+      <div class="section-rule"></div>
+      <div class="grid-3" style="margin-bottom:3rem;">
+        <div class="contact-box reveal">
+          <div class="icon">📧</div>
+          <h3>Email</h3>
+          <p><a href="mailto:2025476714@student.uitm.edu.my">2025476714@student.uitm.edu.my</a></p>
+        </div>
+        <div class="contact-box reveal">
+          <div class="icon">📞</div>
+          <h3>Phone</h3>
+          <p><a href="tel:0149728891">014-972 8891</a></p>
+        </div>
+        <div class="contact-box reveal">
+          <div class="icon">🌐</div>
+          <h3>External Links</h3>
+          <p>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a><br />
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section aria-labelledby="form-heading">
+      <span class="section-eyebrow">Send a Message</span>
+      <h2 class="section-heading" id="form-heading">Contact Form</h2>
+      <div class="section-rule"></div>
+
+      <div style="display:grid; grid-template-columns: 1fr 1fr; gap:2.5rem; align-items:start;">
+
+        <div class="card reveal" style="border-left-color: var(--accent-gold);">
+          <form id="contactForm" novalidate aria-label="Contact form">
+
+            <div class="form-group">
+              <label for="fname">Full Name <span aria-hidden="true" style="color:red;">*</span></label>
+              <input type="text" id="fname" name="name" placeholder="Enter your full name" required autocomplete="name" />
+            </div>
+
+            <div class="form-group">
+              <label for="femail">Email Address <span aria-hidden="true" style="color:red;">*</span></label>
+              <input type="email" id="femail" name="email" placeholder="Enter your email address" required autocomplete="email" />
+            </div>
+
+            <div class="form-group">
+              <label for="fphone">Phone Number</label>
+              <input type="tel" id="fphone" name="phone" placeholder="e.g. 012-345 6789" autocomplete="tel" />
+            </div>
+
+            <div class="form-group">
+              <label for="fsubject">Subject</label>
+              <select id="fsubject" name="subject">
+                <option value="" disabled selected>-- Select a subject --</option>
+                <option value="general">General Enquiry</option>
+                <option value="academic">Academic Collaboration</option>
+                <option value="internship">Internship / Job Opportunity</option>
+                <option value="project">Project Collaboration</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="fmessage">Message <span aria-hidden="true" style="color:red;">*</span></label>
+              <textarea id="fmessage" name="message" placeholder="Write your message here..." required></textarea>
+            </div>
+
+            <button type="submit" class="form-btn">Send Message</button>
+            <div id="formMsg" class="form-msg" role="alert" aria-live="polite"></div>
+
+          </form>
+        </div>
+
+        <div>
+          <div class="card reveal" style="margin-bottom:1.5rem;">
+            <h3 class="card-title">📍 Location</h3>
+            <p style="font-size:0.9rem; margin-top:0.5rem; line-height:1.8;">
+              Universiti Teknologi MARA (UiTM)<br />
+              Puncak Perdana Campus<br />
+              40150 Shah Alam<br />
+              Selangor, Malaysia
+            </p>
+            <p style="margin-top:0.75rem; font-size:0.85rem;">
+              <a href="https://maps.google.com/?q=UiTM+Puncak+Perdana" target="_blank" rel="noopener noreferrer">
+                View on Google Maps →
+              </a>
+            </p>
+          </div>
+
+          <div class="card reveal">
+            <h3 class="card-title">⏰ Response Time</h3>
+            <p style="font-size:0.9rem; margin-top:0.5rem; line-height:1.8;">
+              I typically respond to emails and messages within <strong>1–2 business days</strong>. 
+              For urgent matters, please contact me directly via phone.
+            </p>
+            <p style="margin-top:0.75rem; font-size:0.85rem; color:var(--text-light);">
+              Please note that I am a full-time student and may not always be immediately available.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-top">
+      <div class="footer-col">
+        <h3>Sitemap</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="activities.html">Activities</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Contact</h3>
+        <ul>
+          <li><a href="mailto:2025476714@student.uitm.edu.my">2025476714@student.uitm.edu.my</a></li>
+          <li><a href="tel:0149728891">014-972 8891</a></li>
+          <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          <li><a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Disclaimer</h3>
+        <p>IMS458 Web Design &amp; Management Individual Assignment. Academic use only. &copy; 2026 Muhamad Adib Irfan Bin Khairuddin.</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Muhamad Adib Irfan Bin Khairuddin | IMS458 Web Design &amp; Management</p>
+      <p style="margin-top:0.3rem;">Recommended: Google Chrome / Firefox &nbsp;|&nbsp; 1280&times;720 or higher</p>
+      <a href="#" class="back-top" aria-label="Back to top">&#8679; Back to Top</a>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
